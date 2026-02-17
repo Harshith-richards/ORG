@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Attendance";
+}
+<h2>Attendance</h2>
+<p>Use this page to check-in and check-out.</p>
+<form asp-action="CheckIn" method="post" class="d-inline">
+    @Html.AntiForgeryToken()
+    <input type="number" name="employeeId" class="form-control d-inline w-auto" placeholder="Employee ID" />
+    <button class="btn btn-primary">Check In</button>
+</form>
+<form asp-action="CheckOut" method="post" class="d-inline ms-2">
+    @Html.AntiForgeryToken()
+    <input type="number" name="employeeId" class="form-control d-inline w-auto" placeholder="Employee ID" />
+    <button class="btn btn-secondary">Check Out</button>
+</form>

@@ -1,0 +1,6 @@
+:root {
+    --primary: #1B4F72;
+    --accent: #2E86C1;
+}
+
+.navbar.bg-primary { background-color: var(--primary) !important; }
