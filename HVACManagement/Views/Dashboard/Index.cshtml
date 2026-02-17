@@ -1,0 +1,11 @@
+@model HVACManagement.ViewModels.Dashboard.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<h2 class="mb-4">Admin Dashboard</h2>
+<div class="row g-3">
+    <div class="col-md-3"><div class="card"><div class="card-body"><h6>Active Projects</h6><h3>@Model.ActiveProjects</h3></div></div></div>
+    <div class="col-md-3"><div class="card"><div class="card-body"><h6>Near Deadline</h6><h3>@Model.ProjectsNearDeadline</h3></div></div></div>
+    <div class="col-md-3"><div class="card"><div class="card-body"><h6>Delayed Projects</h6><h3>@Model.DelayedProjects</h3></div></div></div>
+    <div class="col-md-3"><div class="card"><div class="card-body"><h6>Active Employees</h6><h3>@Model.ActiveEmployees</h3></div></div></div>
+</div>
